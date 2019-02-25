@@ -6,3 +6,9 @@ Author: szobek
 body {
     background:  #bdff96;
 }
+
+header {
+    background-color: white;
+    height: 100px;
+    width: 100%;
+}

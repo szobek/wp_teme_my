@@ -1,14 +1,5 @@
 /*
-Theme Name: MY
-Author: szobek
+Theme Name: my
+Description: my first wp theme
+Author: Szobek
  */
-
-body {
-    background:  #bdff96;
-}
-
-header {
-    background-color: white;
-    height: 100px;
-    width: 100%;
-}

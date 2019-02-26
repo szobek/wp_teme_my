@@ -1,0 +1,40 @@
+.site-title {
+  color: #50bdea;
+  text-decoration: underline;
+}
+
+
+.blue-sec{
+  min-height: 500px;
+  background-image: url(http://anitawp.test/wp-content/themes/my/res/blue_bg.png), linear-gradient(#02A6A8, #0A6874);
+  background-size: 255px;
+  background-position: right;
+  background-repeat: no-repeat, repeat;
+}
+
+h2  {
+  text-align: center;
+}
+
+.blue-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #02A6A8,;
+  margin: auto;
+
+
+  &.hour {
+
+  }
+
+  &.people {
+
+  }
+
+  &.pencile {
+
+  }
+
+
+}

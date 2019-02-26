@@ -12,8 +12,9 @@
         <div class="container">
             <nav class="navbar navbar-expand-xl p-0">
                 <div class="navbar-brand">
-
-                        <a class="site-title" href="<?php echo esc_url( home_url( '/' )); ?>"><?php esc_url(bloginfo('name')); ?></a>
+                        <a class="site-title" href="<?php echo esc_url( home_url( '/' )); ?>">
+                    <img src="http://anitawp.test/wp-content/uploads/2019/02/cropped-bubus_logo-32x32.png" alt="">
+                        </a>
 
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="" aria-expanded="false" aria-label="Toggle navigation">

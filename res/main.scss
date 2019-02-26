@@ -14,27 +14,64 @@
 
 h2  {
   text-align: center;
+  &.blue {
+    color: #02A6A8;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-decoration: underline;
+  }
+}
+
+.container  {
+  &.blue-sec {
+    background-image: url("/wp-content/themes/my/res/blue_bg_left.svg"), linear-gradient(#02A6A8, #0A6874);
+    background-size: 355px, auto;
+    background-position: left;
+    background-repeat: no-repeat, repeat;
+  }
 }
 
 .blue-circle {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background: #02A6A8,;
+  background: #02A6A8;
   margin: auto;
 
-
+ &.hour, &.people, &.pencile {
+   background-size: 80% ;
+   background-position: center;
+   background-repeat: no-repeat;
+ }
   &.hour {
-
+    background-image: url("/wp-content/themes/my/res/clock_icon.svg ") ;
   }
 
   &.people {
-
+    background-image: url("/wp-content/themes/my/res/peoples_icon.svg ") ;
   }
 
   &.pencile {
-
+    background-image: url("/wp-content/themes/my/res/pencile_icon.svg ") ;
   }
 
 
+}
+.wpcf7-form {
+  margin: auto;
+  text-align: center;
+  input {
+    width: 100%;
+  }
+
+
+  input[type="submit"] {
+    width: 20%;
+    min-width: 150px;
+  }
+
+  .wpcf7-validation-errors {
+    border: 2px solid #ff0000 !important;
+    color: #fff;
+  }
 }

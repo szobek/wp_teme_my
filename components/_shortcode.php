@@ -7,12 +7,10 @@
  */
 
 //[foobar]
-function blue_circle(){
-    return "
-        <div class=\"col-4\">
-            <div class=\"blue-circle hour\"></div>
+function blue_circle($atts){
+    $class =  (isset($atts['menu']))  ? $atts['menu'] : "" ;
 
-        </div>";
+    return "<div class=\"col-4\"> <div class=\"blue-circle $class \"></div></div>";
 }
 add_shortcode( 'bc', 'blue_circle' );
 
@@ -31,10 +29,11 @@ function end_row(){
 add_shortcode( 'endrow', 'end_row' );
 
 
+function container($atts){
 
+    $class =  (isset($atts['class']))  ? $atts['class'] : "" ;
 
-function container(){
-    return "<div class=\"container\">";
+    return "<div class=\"container $class\">";
 }
 add_shortcode( 'container', 'container' );
 
@@ -43,11 +42,25 @@ function end_container(){
 }
 add_shortcode( 'endcontainer', 'end_container' );
 
-function t($atts){
-    return "az eredmény:" . $atts["color"];
-}
-add_shortcode( 't', 't' );
 
+function blue_row(){
+
+    return "<div class=\"blue-sec m-5\"></div>";
+}
+add_shortcode( 'blue_row', 'blue_row' );
+
+function col12(){
+
+    return "<div class=\"col-md-12\">";
+}
+add_shortcode( 'col12', 'col12' );
+
+
+function endcol(){
+
+    return "</div>";
+}
+add_shortcode( 'endcol', 'endcol' );
 
 
 

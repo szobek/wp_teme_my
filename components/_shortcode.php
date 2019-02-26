@@ -43,6 +43,11 @@ function end_container(){
 }
 add_shortcode( 'endcontainer', 'end_container' );
 
+function t($atts){
+    return "az eredmény:" . $atts["color"];
+}
+add_shortcode( 't', 't' );
+
 
 
 

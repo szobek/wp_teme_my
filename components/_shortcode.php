@@ -37,6 +37,18 @@ function container($atts){
 }
 add_shortcode( 'container', 'container' );
 
+
+function custom($atts){
+
+    $atts =  (isset($atts['class']))  ? $atts['class'] : "" ;
+    $class = str_replace(","," ", $atts);
+
+    return "<div class=\"$class\">";
+}
+add_shortcode( 'custom', 'custom' );
+
+
+
 function end_container(){
     return "</div>";
 }
@@ -45,7 +57,7 @@ add_shortcode( 'endcontainer', 'end_container' );
 
 function blue_row(){
 
-    return "<div class=\"blue-sec m-5\"></div>";
+    return "<div class=\"blue-sec\"></div>";
 }
 add_shortcode( 'blue_row', 'blue_row' );
 
